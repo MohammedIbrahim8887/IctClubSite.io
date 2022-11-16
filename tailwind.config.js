@@ -17,9 +17,11 @@ module.exports = {
         fontFamily: {
             sans: "Poppins,Inter,Helvetica, Arial, sans-serif",
         },
-        fontsize: {
-            xsm: "0.4rem"
-        },
+        backgroundImage: {
+            'hero-pattern': "url('/img/Web-Header-Background.svg')",
+
+        }
+
     },
     plugins: [],
 };

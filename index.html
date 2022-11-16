@@ -5,25 +5,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IEwedge" />
     <meta name="viewport" content="width=device-width,
-  initial-scale=1.8" />
-    <link rel="stylesheet" href="css/main.css" />
+  initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet " href="css/main.css " />
     <title>Manage Landing Page</title>
 </head>
 
 <body>
     <!--CTA-and-NavBar-Container-->
-    <div id="Container1" class="flex flex-col font-sans bg-Wave ">
+    <div id="Container1 " class=" max-md:m-auto max-md:p-6 flex flex-col font-sans bg-hero-pattern">
         <!--Nav-Bar-->
-        <nav id="NavHolder " class=" flex flex-row justify-between md:mx-16 md:my-10 max-md:mx-4 max-md:my-4">
+        <nav id="NavHolder " class=" flex flex-row justify-between md:mx-16 md:my-10 max-md:ml-4 max-md:mt-4 mb-10 ">
             <!--Logo-->
-            <div id="Logo " class=" hidden md:flex flex-row space-x-2.5">
+            <div id="Logo " class=" flex flex-row space-x-1.5">
                 <img src="./img/logo.svg " />
-                <p class="self-center font-semibold text-base text-DarkBlue">ICT CLUB</p>
+                <p class="self-center font-semibold text-base text-DarkBlue max-md:text-sm max-md:text-DarkBlue ">ICT CLUB</p>
             </div>
-            <div id="LogoSmall" class="hidden max-md:flex flex-row space-x-1.5">
-                <img src="./img/logoSmall.svg " />
-                <p class="self-center font-semibold text-xs text-DarkBlue">ICT CLUB</p>
-            </div>
+
             <!--Navigation-tabs-->
             <div id="Nav " class="hidden lg:flex space-x-16 text-base mt-7 font-medium text-DarkBlue ">
                 <a href="# ">HOME</a>
@@ -34,35 +31,75 @@
             </div>
         </nav>
         <!--CTA-->
-        <div id="CTA " class="flex flex-row md:mx-16 md:my-10 max-md:mx-4 max-md:my-4 ">
+        <div id="CTA " class="flex md:flex-row md:mx-16 md:my-10 max-md:flex-col ">
             <div id="CTA-text " class="flex flex-col flex-1 gap-4 ">
-                <div id="Head " class="text-DarkBlue md:text-8xl font-extrabold max-md:text-lg ">
-                    CREATE THE <br><span>FUTURE <span class="font-semibold md:text-9xl max-md:text-2xl ">|</span></span>
+                <div id="Head " class="text-DarkBlue md:text-8xl font-extrabold max-md:text-5xl ">
+                    CREATE THE <br><span>FUTURE <span class="font-semibold md:text-9xl max-md:text-6xl ">|</span></span>
                     </br>
                 </div>
-
-                <div id="mini_text " class=" flex text-DarkBlue md:text-sm max-md:text-xs font-normal md:my-4 md:mr-6 tracking-wide leading-6 text-justify ">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
+                <div id="CTA-img " class=" hidden max-md:flex ">
+                    <img src="./img/Web development _Flatline 2.svg " />
+                </div>
+                <div id="mini_text " class=" flex text-DarkBlue md:text-base max-md:text-sm font-normal md:my-4 md:mr-6 md:tracking-wide md:leading-6 text-justify mx-md:my-6 ">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
                     Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante.
                 </div>
-                <a href class=" bg-SunsetYellow max-w-fit p-3 rounded-full px-6 font-medium text-DarkBlue ">Learn more</a>
+
+
+
+                <div class=" max-md:mx-auto my-6"><a href class=" bg-SunsetYellow max-w-fit p-3 rounded-full px-6 font-medium text-DarkBlue max-md:text-base px-6 p-3 font-semibold ">Learn more</a></div>
             </div>
 
-            <div id="CTA-img " class="hidden md:flex">
+            <div id="CTA-img " class=" hidden md:flex ">
                 <img src="./img/Web development _Flatline 2.svg " />
             </div>
-            <div id="CTA-imgSmall " class="hidden max-md:flex max-md:item-start">
-                <img src="./img/003Small.svg " />
-            </div>
+
         </div>
     </div>
     <!--Meet-The-Team-->
-    <div id="Container2 "></div>
+    <div id="Container2 " class="flex flex-row flex-auto max-md:flex-col mb-10 ">
+        <!--Meet the team text-->
+        <div class="hidden max-md:flex m-auto text-4xl text-DarkBlue font-semibold">Meet The Team</div>
+        <div><img src="./img/team 2.svg"></div>
+        <div class="flex flex-col md:mt-24 space-x-4 ">
+            <div class="hidden md:flex text-semibold font-semibold text-DarkBlue md:text-7xl ">Meet The Team</div>
+            <div class="flex flex-col justify-between md:mt-7 text-DarkBlue max-md:text-xs justify-between mx-auto ">
+                <div class="flex flex-row md:justify-between md:space-x-4 max-md:justify-evenly">
+                    <div class="flex flex-col ">
+                        <div class="flex flex-col content-center "><img src="./img/blobanimation.svg"></div>
+                        <div class="flex flex-col m-auto">Dagim Tesfaye</div>
+                        <div class="flex flex-col m-auto">President/Mobile Developer</div>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="flex flex-col content-center "><img src="./img/blobanimation.svg"></div>
+                        <div class="flex flex-col m-auto ">Mohammed Ibrahim</div>
+                        <div class="flex flex-col m-auto">Vice President/Lead Developer</div>
+
+                    </div>
+
+                </div>
+                <div class="flex flex-row md:justify-between md:space-x-4 max-md:justify-evenly">
+                    <div class="flex flex-col">
+                        <div class="flex flex-col content-center "><img src="./img/blobanimation.svg"></div>
+                        <div class="flex flex-col m-auto">Jonathan Zeru</div>
+                        <div class="flex flex-col m-auto">Web & Mobile Developer</div>
+                    </div>
+                    <div class="flex flex-col ">
+                        <div class="flex flex-col content-center "><img src="./img/blobanimation.svg"></div>
+                        <div class="flex flex-col m-auto">Wengel Tesema</div>
+                        <div class="flex flex-col m-auto">Treasurer/Web Developer</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
     <!--Who-are-we-->
-    <div id="Container3"></div>
+    <div id="Container3 "></div>
     <!--ICT-Club-News-->
-    <div id="Container4"></div>
+    <div id="Container4 "></div>
     <!--Contact-Us-->
-    <div id="Container5"></div>
+    <div id="Container5 "></div>
 </body>
 
 </html>
