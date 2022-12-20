@@ -1,7 +1,7 @@
 function sleepText(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
 }
-const phrases1 = ["Chat", "Create", "Innovate", "Smash"];
+const phrases1 = ["Chat", "Create", "Innovate"];
 
 const el1 = document.getElementById("Chat");
 let sleeper = 100;

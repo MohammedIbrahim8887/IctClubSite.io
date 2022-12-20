@@ -18,10 +18,10 @@ module.exports = {
             sans: "Poppins,Inter,Helvetica, Arial, sans-serif",
         },
         backgroundImage: {
-            'hero-pattern': "url('/img/Web-Header-Background.svg')",
+            "hero-pattern": "url('/img/Web-Header-Background.svg')",
+            "TheBlob": "url('/img/blobanimation.svg')",
 
-        }
-
+        },
     },
     plugins: [],
 };
