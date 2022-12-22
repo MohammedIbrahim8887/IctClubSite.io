@@ -545,6 +545,14 @@ video {
   right: 1.5rem;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -836,18 +844,6 @@ video {
 html {
   overflow-x: hidden;
 }
-
-/*#Nav-bar {
-    overflow: hidden;
-    background-color: #f9a826;
-}
-
-.sticky {
-    position: sticky;
-    top: 0%;
-    width: 100%;
-}
-*/
 
 #Container1 {
   background-image: url("../img/Web-Header-Background.svg");
