@@ -84,12 +84,19 @@ html {
 }
 
 
-/*NavBar*/
+/*carousel*/
 
+.carousel {
+    width: 500px;
+    height: 600px;
+}
 
-/*
-#NavHolder {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-}*/
+.carousel-caption {
+    width: 490px;
+    height: 350px;
+}
+
+.carousel-item img {
+    width: 500px;
+    height: 300px;
+}

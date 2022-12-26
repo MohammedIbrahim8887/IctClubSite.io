@@ -8,6 +8,10 @@
   initial-scale=1.0, user-scalable=no" />
     <link rel="stylesheet " href="css/main.css " />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>ICT CLUB</title>
 </head>
 
@@ -15,10 +19,10 @@
     <div class="relative">
         <!--Nav-Bar-->
         <div id="Nav-bar" class="fixed top-0 left-0 right-0 bg-SunsetYellow z-50">
-            <nav id="NavHolder" class=" flex flex-row justify-between md:mx-16 md:py-6 max-md:ml-2.5 max-md:py-3 ">
+            <nav id="NavHolder" class=" flex flex-row justify-between md:mx-16 md:py-4 max-md:ml-2.5 max-md:py-3 ">
                 <!--Logo-->
                 <div id="Logo" class=" flex flex-row space-x-1.5">
-                    <img src="./img/logo.svg " class="w-2/6" />
+                    <img src="./img/logo.svg " class="w-2/6 max-md:mx-6" />
                     <p class="self-center font-semibold text-base text-DarkBlue max-md:text-sm max-md:text-DarkBlue ">ICT CLUB</p>
                 </div>
 
@@ -32,15 +36,15 @@
                 </div>
 
                 <!-- Hamburger Icon -->
-                <button id="menu-btn" class="block self-center ml-32 hamburger md:hidden focus:outline-none">
-<span class="hamburger-top"></span>
-<span class="hamburger-middle"></span>
-<span class="hamburger-bottom"></span>
-</button>
+                <button id="menu-btn" class="block self-center ml-32 hamburger lg:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+                </button>
 
 
                 <!-- Mobile Menu -->
-                <div class="md:hidden">
+                <div class="lg:hidden">
                     <div id="menu" class="absolute flex-col  space-x-30 hidden self-end py-8 mt-10 space-y-6 font-medium bg-DarkBlue rounded-xl text-SunsetYellow max-lg:w-auto max-lg:self-center left-6 right-6 drop-shadow-md">
                         <a href="javascript: scrollToHome()" class="flex flex-row justify-between  ">
                             <p class="self-center text-2xl ml-12">HOME</p><img src="/img/Home.svg" class="mr-12"> </a>
@@ -56,12 +60,11 @@
                 </div>
             </nav>
         </div>
-
-        <!--CTA-and-NavBar-Container-->
-        <div id="Container1" class=" md:mt-20 max-md:mt-16 max-md:p-6 flex flex-col font-sans bg-hero-pattern">
+        <!--CTA-Container-->
+        <div id="Container1" class=" max-md:px-6 max-md:pt-6 flex flex-col font-sans bg-hero-pattern">
             <!--CTA-->
-            <div id="CTA " class="flex md:flex-row md:mx-16 md:my-16 max-md:flex-col ">
-                <div id="CTA-text " class="flex flex-col flex-1 gap-4 ">
+            <div id="CTA " class="flex md:flex-row md:mx-16 md:pt-16 max-md:pt-2 max-md:flex-col ">
+                <div id="CTA-text " class="flex flex-col flex-1 gap-16 ">
                     <div data-aos="fade-right" data-aos-delay="10" data-aos-duration="1000" data-aos-easing="ease-in-out" id="Head " class="text-DarkBlue md:text-8xl font-extrabold max-md:text-5xl">
                         CREATE THE <br><span id="typewriter"></span><span class="font-semibold md:text-9xl max-md:text-6xl " id="cursor">|</span>
                     </div>
@@ -69,13 +72,13 @@
                     <div data-aos="fade-down-right" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" id="CTA-img " class=" hidden max-md:flex ">
                         <img src="./img/Web development _Flatline 2.svg " />
                     </div>
-                    <div data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" id="mini_text " class=" flex text-DarkBlue md:text-base max-md:text-sm font-normal md:my-6 md:mr-6 md:tracking-wide md:leading-6 text-justify mx-md:my-6 ">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet
+                    <div data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" id="mini_text " class=" flex text-DarkBlue md:text-base max-md:text-sm font-normal  md:mr-6 md:tracking-wide md:leading-6 text-justify  ">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet
                         augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante.
                     </div>
 
 
 
-                    <div data-aos="flip-up" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out" class=" max-md:mx-auto my-6 "><a href="javascript: scrollToTeam()" class="  bg-SunsetYellow max-w-fit p-3 rounded-full px-6 font-medium text-DarkBlue max-md:text-base px-6 p-3 font-semibold  ">Learn more</a></div>
+                    <div data-aos="flip-up" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out" class=" max-md:mx-auto my-06 "><a href="javascript: scrollToTeam()" class="  bg-SunsetYellow max-w-fit p-3 rounded-full px-6 font-medium text-DarkBlue max-md:text-base px-6 p-3 font-semibold  ">Learn more</a></div>
                 </div>
 
                 <div data-aos="fade-down-left" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" id="CTA-img " class=" hidden md:flex ">
@@ -84,123 +87,179 @@
 
             </div>
         </div>
-    </div>
-    <!--Meet-The-Team-->
-    <div id="Container2" class="flex flex-row flex-auto max-md:flex-col mb-10 ">
-        <!--Meet the team text-->
-        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="hidden max-md:flex m-auto text-4xl text-DarkBlue font-semibold ">Meet The Team</div>
-        <div data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
-            <img src="./img/team 2.svg"></div>
-        <div class="flex flex-col md:mt-24 space-x-4 ">
-            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="hidden md:flex text-semibold font-semibold text-DarkBlue md:text-7xl ">Meet The Team</div>
-            <div class="flex flex-col justify-between md:mt-7 text-DarkBlue max-md:text-xs justify-between mx-auto ">
-                <div class="flex flex-row md:justify-between md:space-x-4 max-md:justify-evenly">
-                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="flex flex-col ">
-                        <div class="flex flex-col content-center "><img src="./img/blobanimation.svg"></div>
-                        <div class="flex flex-col m-auto">Dagim Tesfaye</div>
-                        <div class="flex flex-col m-auto">President/Mobile Developer</div>
-                    </div>
-                    <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="flex flex-col">
-                        <div class="flex flex-col content-center "><img src="./img/blobanimation.svg"></div>
-                        <div class="flex flex-col m-auto ">Mohammed Ibrahim</div>
-                        <div class="flex flex-col m-auto ">Vice President/Lead Developer</div>
+        <!--Meet-The-Team-->
+        <div id="Container2" class="flex flex-row flex-auto max-md:flex-col mb-10 ">
+            <!--Meet the team text-->
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="hidden max-md:flex m-auto text-4xl text-DarkBlue font-semibold pt-20 ">Meet The Team</div>
+            <div data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                <img src="./img/team 2.svg"></div>
+            <div class="flex flex-col md:pt-6 max-md:pt-6 space-x-4 ">
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="hidden md:flex text-semibold font-semibold text-DarkBlue md:text-7xl ">Meet The Team</div>
+                <div class="flex flex-col justify-between md:mt-7 text-DarkBlue max-md:text-xs justify-between mx-auto ">
+                    <div class="flex flex-row md:justify-between md:space-x-4 max-md:justify-evenly">
+                        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="flex flex-col ">
+                            <div class="flex flex-col content-center "><img src="./img/blobanimation.svg"></div>
+                            <div class="flex flex-col m-auto">Dagim Tesfaye</div>
+                            <div class="flex flex-col m-auto">President/Mobile Developer</div>
+                        </div>
+                        <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="flex flex-col">
+                            <div class="flex flex-col content-center "><img src="./img/blobanimation.svg"></div>
+                            <div class="flex flex-col m-auto ">Mohammed Ibrahim</div>
+                            <div class="flex flex-col m-auto ">Vice President/Lead Developer</div>
+
+                        </div>
 
                     </div>
+                    <div class="flex flex-row md:justify-between md:space-x-4 max-md:justify-evenly">
+                        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="flex flex-col">
+                            <div class="flex flex-col content-center "><img src="./img/blobanimation.svg"></div>
+                            <div class="flex flex-col m-auto">Jonathan Zeru</div>
+                            <div class="flex flex-col m-auto">Web & Mobile Developer</div>
+                        </div>
+                        <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="flex flex-col ">
+                            <div class="flex flex-col content-center "><img src="./img/blobanimation.svg"></div>
+                            <div class="flex flex-col m-auto">Wengel Tesema</div>
+                            <div class="flex flex-col m-auto">Treasurer/Web Developer</div>
+                        </div>
 
+                    </div>
                 </div>
-                <div class="flex flex-row md:justify-between md:space-x-4 max-md:justify-evenly">
-                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="flex flex-col">
-                        <div class="flex flex-col content-center "><img src="./img/blobanimation.svg"></div>
-                        <div class="flex flex-col m-auto">Jonathan Zeru</div>
-                        <div class="flex flex-col m-auto">Web & Mobile Developer</div>
-                    </div>
-                    <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="flex flex-col ">
-                        <div class="flex flex-col content-center "><img src="./img/blobanimation.svg"></div>
-                        <div class="flex flex-col m-auto">Wengel Tesema</div>
-                        <div class="flex flex-col m-auto">Treasurer/Web Developer</div>
-                    </div>
+            </div>
 
+        </div>
+        <!--Who-are-we-->
+        <div id="Container3" class="md:flex flex-row justify-between max-md:flex-col text-DarkBlue md:mx-16 max-md:mx-10 md:pt-20 max-md:pt-8">
+            <div class="flex-col flex-1">
+                <div class="max-md:flex mt-8 font-semibold md:text-6xl max-md:text-3xl max-md:place-content-center max-md:flex-1"><span id="About"></span><span id="cursor" class="font-semibold md:text-8xl max-md:text-4xl ">|</span></div>
+                <div class="md:hidden max-md:flex flex-row gap-4">
+                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="flex flex-col" class="max-md:flex justify-self-center"><img src="img/support-team.svg"></div>
+                    <div class="max-md: flex flex-col">
+                        <div class="mt-10 font-semibold text-xl justify-center">OUR MISSION</div>
+                        <div class="mt-2 text-xs">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</div>
+                    </div>
+                </div>
+                <div class="md:hidden mt-8 font-semibold text-xl">OUR VISION</div>
+                <div class="md:hidden max-md:flex justify-start mt-2 text-xs">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</div>
+                <div class="md:hidden mt-8 font-semibold text-xl">OUR GOAL</div>
+                <div class="md:hidden mt-2 text-xs">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</div>
+
+                <div class="max-md:hidden mt-10 font-semibold md:text-xl">OUR MISSION</div>
+                <div class="max-md:hidden mt-2 max-md:text-sm">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</div>
+                <div class="max-md:hidden mt-8 font-semibold md:text-xl">OUR VISION</div>
+                <div class="max-md:hidden mt-2 max-md:text-sm">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</div>
+                <div class="max-md:hidden mt-8 font-semibold md:text-xl">OUR GOAL</div>
+                <div class="max-md:hidden mt-2 max-md:text-sm">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</div>
+
+            </div>
+            <div class="max-md:hidden "><img src="img/support-team.svg"></div>
+
+
+        </div>
+        <!--ICT-Club-News-->
+        <div id="Container4" class="flex flex-row flex-auto md:justify-evenly max-md:flex-col max-md:pt-16 md:pt-32 ">
+            <!--ICT-Club-News-->
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="hidden max-md:flex m-auto text-4xl text-DarkBlue font-semibold ">ICT Club News</div>
+            <div data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                <img src="./img/Frame 2.svg"></div>
+            <div class="flex flex-col justify-between ">
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="hidden md:-top-5 md:flex md:flex-col md:m-auto text-semibold font-semibold text-DarkBlue md:text-7xl ">ICT Club News<br> </br>
+                </div>
+                <div id="carouselDarkVariant" data-aos-easing="linear" data-aos-duration="1500" data-aos-easing="ease-in-out" class="carousel w-[500px] h-[700px] slide max-sm:w-80 max-sm:h-[700px] max-md:justify-center carousel-fade justify-center self-center carousel-dark relative"
+                    data-bs-ride="carousel">
+                    <!-- Indicators -->
+                    <div class="carousel-indicators absolute right-0 bottom-1/4 left-0 flex justify-center p-0 mb-4">
+                        <button data-bs-target="#carouselDarkVariant" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button data-bs-target="#carouselDarkVariant" data-bs-slide-to="1" aria-label="Slide 1"></button>
+                        <button data-bs-target="#carouselDarkVariant" data-bs-slide-to="2" aria-label="Slide 1"></button>
+                    </div>
+                    <!---->
+                    <div class="carousel-inner relative">
+                        <!-- Single item 1-->
+                        <div class="carousel-item active float-left">
+                            <div class=" overflow-hidden max-sm:w-80 max-sm:h-full  ">
+                                <img class="w-[500px] h-[300px]" src="./img/1st design.PNG" class="block" alt="" />
+                                <div class="carousel-caption text-center w-[490px] h-[300px]">
+                                    <p class="text-xl max-md:text-center text-DarkBlue flex max-sm:w-80 max-sm:h-full md:text-base max-md:text-sm font-normal ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nesciunt aperiam recusandae repellendus accusantium magni totam aut reiciendis et vel, vero, quod ipsam neque iure rerum culpa asperiores. Quidem, veritatis?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single item 2-->
+                        <div class="carousel-item float-left">
+                            <div class=" overflow-hidden max-sm:w-80 max-sm:h-full  ">
+                                <img class="w-[500px] h-[300px]" src="./img/20211129_142825.jpg" class="block" alt="" />
+                                <div class="carousel-caption text-center w-[490px] h-[300px]">
+                                    <p class="text-xl max-md:text-center text-DarkBlue flex max-sm:w-80 max-sm:h-full md:text-base max-md:text-sm font-normal ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nesciunt aperiam recusandae repellendus accusantium magni totam aut reiciendis et vel, vero, quod ipsam neque iure rerum culpa asperiores. Quidem, veritatis?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single item 3-->
+                        <div class="carousel-item float-left">
+                            <div class=" overflow-hidden max-sm:w-80 max-sm:h-full  ">
+                                <img class="w-[500px] h-[300px]" src="./img/pexels-pixabay-56857.jpg" class="block" alt="" /></div>
+                            <div class="carousel-caption text-center w-[490px] h-[300px]">
+                                <p class="text-xl max-md:text-center text-DarkBlue flex max-sm:w-80 max-sm:h-full md:text-base max-md:text-sm font-normal ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nesciunt aperiam recusandae repellendus accusantium magni totam aut reiciendis et vel, vero, quod ipsam neque iure rerum culpa asperiores. Quidem, veritatis?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <button class="carousel-control-prev absolute top-1/4 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0" type="button" data-bs-target="#carouselDarkVariant" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+                    <button class="carousel-control-next absolute top-1/4 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0" type="button" data-bs-target="#carouselDarkVariant" data-bs-slide="next">
+          <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
                 </div>
             </div>
         </div>
 
-    </div>
-    <!--Who-are-we-->
-    <div id="Container3" class="md:flex flex-row justify-between max-md:flex-col text-DarkBlue md:m-16 max-md:m-10 ">
-        <div class="flex-col flex-1">
-            <div class="max-md:flex mt-8 font-semibold md:text-6xl max-md:text-3xl max-md:place-content-center max-md:flex-1"><span id="About"></span><span id="cursor" class="font-semibold md:text-8xl max-md:text-4xl ">|</span></div>
-            <div class="md:hidden max-md:flex flex-row gap-4">
-                <div class="max-md:flex justify-self-center"><img src="img/support-team.svg"></div>
-                <div class="max-md: flex flex-col">
-                    <div class="mt-10 font-semibold text-xl justify-center">OUR MISSION</div>
-                    <div class="mt-2 text-xs">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</div>
-                </div>
-            </div>
-            <div class="md:hidden mt-8 font-semibold text-xl">OUR VISION</div>
-            <div class="md:hidden max-md:flex justify-start mt-2 text-xs">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</div>
-            <div class="md:hidden mt-8 font-semibold text-xl">OUR GOAL</div>
-            <div class="md:hidden mt-2 text-xs">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</div>
-
-            <div class="max-md:hidden mt-10 font-semibold md:text-xl">OUR MISSION</div>
-            <div class="max-md:hidden mt-2 max-md:text-sm">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</div>
-            <div class="max-md:hidden mt-8 font-semibold md:text-xl">OUR VISION</div>
-            <div class="max-md:hidden mt-2 max-md:text-sm">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</div>
-            <div class="max-md:hidden mt-8 font-semibold md:text-xl">OUR GOAL</div>
-            <div class="max-md:hidden mt-2 max-md:text-sm">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</div>
-
-        </div>
-        <div class="max-md:hidden "><img src="img/support-team.svg"></div>
-
-
-    </div>
-    <!--ICT-Club-News-->
-    <div id="Container4"></div>
-    <!--Contact-Us-->
-    <div id="Container5" class="md:flex flex-row justify-between md:px-20 bg-DarkBlue py-10 text-SunsetYellow max-md:flex-col">
-        <!--Text-Parts-->
-        <div class="flex flex-col mt-12 max-md:mt-4">
-            <div class="flex flex-row space-x-1.5 max-md:ml-8 w-2/3">
-                <!--Logo-->
-                <div>
-                    <img src="/img/YellowSmallLogo.svg"></div>
-                <div class="self-center font-semibold text-base max-md:text-sm ">ICT CLUB</div>
-            </div>
-            <div class=" space-y-4 mt-12  ">
-                <div class="hidden max-md:flex ">
-                    <img src="/img/Contact-us.svg "></div>
-                <div id="Foot " class=" md:text-5xl font-semibold max-md:text-4xl max-md:ml-20 ">
-                    Let's <span id="Chat"></span><span id="cursor" class="font-semibold md:text-6xl max-md:text-5xl ">|</span>
-                </div>
-                <div class="flex flex-row space-x-4 max-md:ml-20">
-                    <a href="#" class=""><img src="/img/telegram.svg"></a>
-                    <a href="#"><img src="/img/youtube.svg"></a>
-                    <a href="#"><img src="/img/instagram.svg"></a>
-                    <a href="#"><img src="/img/twitter.svg"></a>
-                </div>
-                <div class="flex flex-row space-x-3 max-md:ml-20">
-                    <img src="/img/email.svg">
-                    <p class="self-center">ICTclub@gmail.com</p>
-                </div>
-                <div class="flex flex-row space-x-3 max-md:ml-20">
-                    <div><img src="img/phone.svg"></div>
+        <!--Contact-Us-->
+        <div id="Container5" class="md:flex flex-row justify-between md:px-20 bg-DarkBlue py-4 text-SunsetYellow max-md:flex-col">
+            <!--Text-Parts-->
+            <div class="flex flex-col mt-12 max-md:mt-4">
+                <div class="flex flex-row space-x-1.5 max-md:ml-8 w-2/3">
+                    <!--Logo-->
                     <div>
-                        <p class="self-center">+251946410664</p>
-                        <p class="self-center">+251946410664</p>
-                        <p class="self-center">+251946410664</p>
+                        <img src="/img/YellowSmallLogo.svg"></div>
+                    <div class="self-center font-semibold text-base max-md:text-sm ">ICT CLUB</div>
+                </div>
+                <div class=" space-y-4 mt-12  ">
+                    <div class="hidden max-md:flex ">
+                        <img src="/img/Contact-us.svg "></div>
+                    <div id="Foot " class=" md:text-5xl font-semibold max-md:text-4xl max-md:ml-20 ">
+                        Let's <span id="Chat"></span><span id="cursor" class="font-semibold md:text-6xl max-md:text-5xl ">|</span>
+                    </div>
+                    <div class="flex flex-row space-x-4 max-md:ml-20">
+                        <a href="#" class=""><img src="/img/telegram.svg"></a>
+                        <a href="#"><img src="/img/youtube.svg"></a>
+                        <a href="#"><img src="/img/instagram.svg"></a>
+                        <a href="#"><img src="/img/twitter.svg"></a>
+                    </div>
+                    <div class="flex flex-row space-x-3 max-md:ml-20">
+                        <img src="/img/email.svg">
+                        <p class="self-center">ICTclub@gmail.com</p>
+                    </div>
+                    <div class="flex flex-row space-x-3 max-md:ml-20">
+                        <div><img src="img/phone.svg"></div>
+                        <div>
+                            <p class="self-center">+251946410664</p>
+                            <p class="self-center">+251946410664</p>
+                            <p class="self-center">+251946410664</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row space-x-2 max-md:ml-20">
+                        <img src="/img/location.svg">
+                        <p class="self-center">Hope Enterpirse,<br class="hidden max-md:flex">University College<br>Jemo next to<br class="hidden max-md:flex"> Medhanialem Church</p>
                     </div>
                 </div>
-                <div class="flex flex-row space-x-2 max-md:ml-20">
-                    <img src="/img/location.svg">
-                    <p class="self-center">Hope Enterpirse,<br class="hidden max-md:flex">University College<br>Jemo next to<br class="hidden max-md:flex"> Medhanialem Church</p>
-                </div>
-            </div>
 
+            </div>
+            <!--Image-->
+            <div class="hidden md:flex w-1/2 ">
+                <img src="/img/Contact-us.svg ">
+            </div>
         </div>
-        <!--Image-->
-        <div class="hidden md:flex w-1/2 ">
-            <img src="/img/Contact-us.svg ">
-        </div>
-    </div>
     </div>
 
     <script src="/js/script.js"></script>
@@ -218,6 +277,7 @@
     <script src="/js/to_contact.js"></script>
     <script src="/js/scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 </body>
 
 </html>
