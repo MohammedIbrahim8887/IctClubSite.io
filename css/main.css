@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.2.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -525,6 +525,10 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -557,21 +561,12 @@ video {
   z-index: 50;
 }
 
-.z-40 {
-  z-index: 40;
-}
-
 .float-left {
   float: left;
 }
 
 .m-auto {
   margin: auto;
-}
-
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .mx-auto {
@@ -647,20 +642,20 @@ video {
   width: 33.333333%;
 }
 
-.w-2\/3 {
-  width: 66.666667%;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-\[500px\] {
   width: 500px;
 }
 
 .w-\[490px\] {
   width: 490px;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .max-w-fit {
@@ -704,20 +699,12 @@ video {
   justify-content: space-between;
 }
 
-.justify-evenly {
-  justify-content: space-evenly;
+.gap-16 {
+  gap: 4rem;
 }
 
 .gap-4 {
   gap: 1rem;
-}
-
-.gap-1 {
-  gap: 0.25rem;
-}
-
-.gap-16 {
-  gap: 4rem;
 }
 
 .space-x-1\.5 > :not([hidden]) ~ :not([hidden]) {
@@ -836,39 +823,17 @@ video {
   padding-right: 1.5rem;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.pt-16 {
-  padding-top: 4rem;
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .pt-20 {
   padding-top: 5rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
-}
-
-.pt-6 {
-  padding-top: 1.5rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
 }
 
 .text-center {
@@ -1070,8 +1035,9 @@ html {
 }
 
 @media not all and (min-width: 768px) {
-  .max-md\:m-10 {
-    margin: 2.5rem;
+  .max-md\:mx-6 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 
   .max-md\:mx-auto {
@@ -1084,26 +1050,12 @@ html {
     margin-right: 2.5rem;
   }
 
-  .max-md\:mx-16 {
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-
-  .max-md\:mx-6 {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-
   .max-md\:ml-2\.5 {
     margin-left: 0.625rem;
   }
 
   .max-md\:ml-2 {
     margin-left: 0.5rem;
-  }
-
-  .max-md\:mt-16 {
-    margin-top: 4rem;
   }
 
   .max-md\:mt-4 {
@@ -1116,10 +1068,6 @@ html {
 
   .max-md\:ml-20 {
     margin-left: 5rem;
-  }
-
-  .max-md\:mt-10 {
-    margin-top: 2.5rem;
   }
 
   .max-md\:flex {
@@ -1150,49 +1098,9 @@ html {
     justify-content: space-evenly;
   }
 
-  .max-md\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(1rem * var(--tw-space-x-reverse));
-    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .max-md\:p-6 {
-    padding: 1.5rem;
-  }
-
   .max-md\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-  }
-
-  .max-md\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .max-md\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
-  .max-md\:py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  .max-md\:py-10 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-
-  .max-md\:py-12 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  .max-md\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
   }
 
   .max-md\:px-6 {
@@ -1200,38 +1108,16 @@ html {
     padding-right: 1.5rem;
   }
 
-  .max-md\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
-  .max-md\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
   .max-md\:pt-6 {
     padding-top: 1.5rem;
-  }
-
-  .max-md\:pt-10 {
-    padding-top: 2.5rem;
-  }
-
-  .max-md\:pt-8 {
-    padding-top: 2rem;
   }
 
   .max-md\:pt-16 {
     padding-top: 4rem;
   }
 
-  .max-md\:pt-2 {
-    padding-top: 0.5rem;
-  }
-
-  .max-md\:pt-4 {
-    padding-top: 1rem;
+  .max-md\:pt-8 {
+    padding-top: 2rem;
   }
 
   .max-md\:text-center {
@@ -1280,12 +1166,12 @@ html {
 }
 
 @media not all and (min-width: 480px) {
-  .max-sm\:h-full {
-    height: 100%;
-  }
-
   .max-sm\:h-\[700px\] {
     height: 700px;
+  }
+
+  .max-sm\:h-full {
+    height: 100%;
   }
 
   .max-sm\:w-80 {
@@ -1298,10 +1184,6 @@ html {
     top: -1.25rem;
   }
 
-  .md\:m-16 {
-    margin: 4rem;
-  }
-
   .md\:m-auto {
     margin: auto;
   }
@@ -1311,48 +1193,12 @@ html {
     margin-right: 4rem;
   }
 
-  .md\:my-16 {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-
-  .md\:my-6 {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .md\:my-32 {
-    margin-top: 8rem;
-    margin-bottom: 8rem;
-  }
-
-  .md\:mx-10 {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-  }
-
-  .md\:mt-20 {
-    margin-top: 5rem;
-  }
-
   .md\:mr-6 {
     margin-right: 1.5rem;
   }
 
-  .md\:mt-24 {
-    margin-top: 6rem;
-  }
-
   .md\:mt-7 {
     margin-top: 1.75rem;
-  }
-
-  .md\:mt-16 {
-    margin-top: 4rem;
-  }
-
-  .md\:mt-32 {
-    margin-top: 8rem;
   }
 
   .md\:flex {
@@ -1385,9 +1231,9 @@ html {
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .md\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+  .md\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .md\:px-20 {
@@ -1395,54 +1241,20 @@ html {
     padding-right: 5rem;
   }
 
-  .md\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .md\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
-  .md\:py-24 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-
-  .md\:py-32 {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-
-  .md\:py-60 {
-    padding-top: 15rem;
-    padding-bottom: 15rem;
-  }
-
-  .md\:py-44 {
-    padding-top: 11rem;
-    padding-bottom: 11rem;
-  }
-
-  .md\:pt-16 {
-    padding-top: 4rem;
-  }
-
   .md\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .md\:pt-6 {
+    padding-top: 1.5rem;
   }
 
   .md\:pt-32 {
     padding-top: 8rem;
   }
 
-  .md\:pt-24 {
-    padding-top: 6rem;
-  }
-
-  .md\:pt-6 {
-    padding-top: 1.5rem;
+  .md\:pt-12 {
+    padding-top: 3rem;
   }
 
   .md\:text-8xl {
