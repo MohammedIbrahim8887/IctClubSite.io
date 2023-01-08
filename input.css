@@ -100,3 +100,10 @@ html {
     width: 500px;
     height: 300px;
 }
+
+#groupMembers img {
+    display: flex;
+    max-width: 10rem;
+    border-radius: 25%;
+    align-items: center;
+}

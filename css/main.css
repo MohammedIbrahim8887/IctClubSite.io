@@ -513,10 +513,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.fixed {
-  position: fixed;
-}
-
 .absolute {
   position: absolute;
 }
@@ -596,6 +592,10 @@ video {
 
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .mt-8 {
@@ -1006,6 +1006,13 @@ html {
   height: 300px;
 }
 
+#groupMembers img {
+  display: flex;
+  max-width: 10rem;
+  border-radius: 25%;
+  align-items: center;
+}
+
 .hover\:no-underline:hover {
   text-decoration-line: none;
 }
@@ -1108,12 +1115,12 @@ html {
     padding-right: 1.5rem;
   }
 
-  .max-md\:pt-6 {
-    padding-top: 1.5rem;
-  }
-
   .max-md\:pt-16 {
     padding-top: 4rem;
+  }
+
+  .max-md\:pt-6 {
+    padding-top: 1.5rem;
   }
 
   .max-md\:pt-8 {
@@ -1241,20 +1248,16 @@ html {
     padding-right: 5rem;
   }
 
-  .md\:pt-20 {
-    padding-top: 5rem;
-  }
-
   .md\:pt-6 {
     padding-top: 1.5rem;
   }
 
-  .md\:pt-32 {
-    padding-top: 8rem;
+  .md\:pt-20 {
+    padding-top: 5rem;
   }
 
-  .md\:pt-12 {
-    padding-top: 3rem;
+  .md\:pt-32 {
+    padding-top: 8rem;
   }
 
   .md\:text-8xl {
