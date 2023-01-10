@@ -104,6 +104,6 @@ html {
 #groupMembers img {
     display: flex;
     max-width: 10rem;
-    border-radius: 25%;
+    border-radius: 15%;
     align-items: center;
 }
